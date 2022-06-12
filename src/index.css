@@ -1,13 +1,32 @@
 @import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@100;200;300;400;600&display=swap');
+*{
+  font-family: 'Josefin Sans', sans-serif;
+}
 
 html, body {
   height: 100%;
 }
 
 body {
-  font-family: 'Josefin Sans', sans-serif;
   margin: 0;
   padding: 0;
   background: #247B7B;
   color: #fff
+}
+
+button {
+  padding: 5px 10px;
+  background-color: #FFFFFA;
+  font-weight: 400;
+  border-radius: 8px;
+  color: #247B7B;
+  border: 1px solid #FFFFFA;
+  font-size: 2rem;
+  cursor: pointer;
+  transition: 0.4s;
+}
+
+button:hover {
+  background-color: #247B7B;
+  color: #FFFFFA;
 }
