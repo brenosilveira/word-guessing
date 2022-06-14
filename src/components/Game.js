@@ -4,7 +4,6 @@ import "./Game.css";
 const Game = ({
   letterInput,
   selectCategory,
-  selectWord,
   letters,
   guessedLetters,
   wrongLetters,
@@ -24,7 +23,7 @@ const Game = ({
   return (
     <div className="game">
       <p className="points">
-        <span>Pontuação: {score}</span>
+        <span>Score: {score}</span>
       </p>
       <h1>Guess the word</h1>
       <h3 className="tip">
@@ -54,7 +53,7 @@ const Game = ({
             value={letter}
             ref={letterInputRef}
           />
-          <button>Jogar!</button>
+          <button>Play!</button>
         </form>
       </div>
       <div className="wrongLettersContainer">

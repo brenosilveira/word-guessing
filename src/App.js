@@ -63,10 +63,11 @@ function App() {
     setSelectCategory(category);
     setSelectWord(wordCategory);
     setLetters(wordLetters);
+    console.log(wordCategory)
 
     setGameStage(stages[1].name);
   },[selectWordAndCategory]);
-
+  
   // LETTER INPUT
   const letterInput = (letter) => {
     let normalizeLetter = letter.toLowerCase();
